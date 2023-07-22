@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Practice_Management.MAUI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Practice_Management.MAUI"
+    xmlns:local2="clr-namespace:Practice_Management.MAUI.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage"/>
+
+    <ShellContent
+        Title="ClientPage"
+        ContentTemplate="{DataTemplate local2:ClientPage}"
+        Route="ClientPage"/>
+
+    <ShellContent
+        Title="AddClientPage"
+        ContentTemplate="{DataTemplate local2:ClientAddView}"
+        Route="ClientAddView"/>
+
+    <ShellContent
+        Title="ClientInfoView"
+        ContentTemplate="{DataTemplate local2:ClientInfoView}"
+        Route="ClientInfoView"/>
+    
+    <ShellContent
+        Title="ProjectAddView"
+        ContentTemplate="{DataTemplate local2:ProjectAddView}"
+        Route="ProjectAddView"/>
+    
+    <ShellContent
+        Title="EmployeeView"
+        ContentTemplate="{DataTemplate local2:EmployeeView}"
+        Route="EmployeeView"/>
+
+    <ShellContent
+        Title="EmployeeAddView"
+        ContentTemplate="{DataTemplate local2:EmployeeAddView}"
+        Route="EmployeeAddView"/>
+
+    <ShellContent
+        Title="Time Entry"
+        ContentTemplate="{DataTemplate local2:TimeView}"
+        Route="TimeView"/>
+
+    <ShellContent
+        Title="TimeAddView"
+        ContentTemplate="{DataTemplate local2:TimeAddView}"
+        Route="TimeAddView"/>
+
+    <ShellContent
+        Title="TimerEdit"
+        ContentTemplate="{DataTemplate local2:TimerEdit}"
+        Route="TimerEdit"/>
+</Shell>
